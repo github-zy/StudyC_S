@@ -14,7 +14,7 @@ namespace CreateOperator
             Person person2 = new Person();
             person1.Name = "Deer";
             person2.Name = "Deer's wife";
-            List<Person> nation = Person.GetMarry(person1, person2);
+            List<Person> nation = person1 + person2;
             foreach (var p in nation)
             {
                 Console.WriteLine(p.Name);
@@ -26,7 +26,7 @@ namespace CreateOperator
     {
         public string Name;
 
-        public static List<Person> GetMarry(Person p1, Person p2)
+        public static List<Person> operator +(Person p1, Person p2)
         {
             List<Person> people = new List<Person>();
             people.Add(p1);
