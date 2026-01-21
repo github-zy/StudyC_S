@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OperatorsExample
+namespace OperatorsExample07
 {
     internal class Program
     {
